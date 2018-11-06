@@ -1,0 +1,8 @@
+<div class='has-slider'>
+  <div class='slider' [class.is-animating]="animating" #sliderEl (pan)="pan($event)" [ngStyle]="getOffset()">
+    <app-card class='slider-panel'></app-card>
+    <app-timeline class="slider-panel"></app-timeline>
+    <div class="slider-panel" style="background-color: #aca680;"></div>
+    <div class="slider-panel" style="background-color: tomato;"></div>
+  </div>
+</div>
